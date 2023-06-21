@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+
+<body>
+    <a href="home.html">Next Page</a>
+    <br/>
+    <br/>
+    <img src="./Photos/travel-icon.png" height="100" width="100"/>
+    <br>
+
+    <a href="login.html">Already have an account?</a>
+    <br>
+
+    <h3>Sign-up an account</h3>
+    <br>
+
+    <form action="login.html">
+        <label for="email-address"><span style="color: red;">*</span>Email Address</label>
+        <br>
+        <input type="email" 
+                name="email-address" id="email-address" 
+                placeholder="e.g hello@example.com" 
+                required>
+        <br><br>
+
+        <label for="password"><span style="color: red;">*</span>Password (8-16 characters only)</label>
+        <br>
+        <input type="password" 
+                name="password" 
+                id="password"
+                minlength="8"
+                maxlength="16"
+                size="16"
+                required/> 
+        <br><br>
+
+        <label for="confirm-password"><span style="color: red;">*</span>Confirm Password</label>
+        <br>
+        <input type="password" 
+                name="confirm-password" 
+                id="confirm-password"
+                minlength="8"
+                maxlength="16"
+                size="16"        
+                required/> 
+        <br><br>
+
+        <label for="full-name"><span style="color: red;">*</span>Full Name</label><br>
+        <input type="text" 
+                name="full-name" 
+                id="full-name"
+                placeholder="e.g. Juan dela Cruz" 
+                required/>
+        <br><br>
+
+        <label for="age"><span style="color: red;">*</span>Age</label>
+        <br>
+        <input type="number" 
+                name="age" 
+                id="age" 
+                min="18"
+                required/>
+        <br><br>
+
+        <label for="birthdate">Birthdate (Optional)</label>
+        <br>
+        <input type="date"  
+                name="birthdate" 
+                id="birthdate">
+        <br><br>
+
+        <p>Gender:</p>
+        <input type="radio" 
+                name="gender" 
+                id="male" 
+                value="male" 
+                checked>
+        <label for="male">Male</label>
+
+        <input type="radio" 
+                name="gender" 
+                id="female" 
+                value="female">
+        <label for="female">Female</label>
+        <br><br>
+
+        <p>Select the continents you've travelled into:</p>
+        <br>
+        <input type="checkbox" 
+                name="continent" 
+                id="asia" 
+                value="asia">
+        <label for="asia">Asia</label>
+        <br>
+
+        <input type="checkbox" 
+                name="continent" 
+                id="africa" 
+                value="africa">
+        <label for="africa">Africa</label>
+        <br>
+
+        <input type="checkbox" 
+                name="continent" 
+                id="north-america" 
+                value="north-america">
+        <label for="north-america">North America</label>
+        <br>
+
+        <input type="checkbox" 
+                name="continent" 
+                id="south-america" 
+                value="south-america">
+        <label for="south-america">South America</label>
+        <br>
+
+        <input type="checkbox" 
+                name="continent" 
+                id="antartica" 
+                value="antartica">
+        <label for="antartica">Antartica</label>
+        <br>
+
+        <input type="checkbox" 
+                name="continent" 
+                id="europe" 
+                value="europe">
+        <label for="europe">Europe</label>
+        <br>
+
+        <input type="checkbox" 
+                name="continent" 
+                id="australia" 
+                value="australia">
+        <label for="australia">Australia</label>
+        <br><br>
+
+        <label for="profile-picture">Profile Photo</label>
+        <input type="file"
+                name="profile-picture" 
+                id="profile-picture"
+                accept="image/*"/>
+        <br><br>
+
+        <p>Most favorite travel activity:</p>
+        <select name="favorite-activity" id="favorite-activity">
+                <option value="" disabled selected> Select travel activity</option>   
+                <option value="hiking">Hiking</option>
+                <option value="island-hopping">Island Hopping</option>
+                <option value="city-tour">City Tour</option>
+                </select><br><br>
+        <a href="Next PAGE"></a>
+        <button>Register</button>  
+    </form>
+</body>
+</html>
